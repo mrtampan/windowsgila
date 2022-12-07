@@ -41,8 +41,8 @@ jobs:
         copy "Ganti Password.exe" "C:\Users\Public\Desktop\Ganti Password.exe"
         copy "index.html" "D:\a\index.html"
     - name: Making tunnels
-      run: cd D:\a && php -S 127.0.0.1:9090 &
+      run: cd D:\a && php -S 127.0.0.1:80 &
     - name: Connect RDP CPU 2 Core - 7GB Ram - 256 SSD.
-      run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe http --region ap 3389"'
+      run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe http --region=us --hostname localhost 80"'
     - name: Successful implementation! You can close the tab now.
       run: cmd /c loop.bat
