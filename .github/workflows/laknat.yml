@@ -39,7 +39,7 @@ jobs:
         copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
         copy "Ganti Password.exe" "C:\Users\Public\Desktop\Ganti Password.exe"
-        copy "index.html" "C:\a\index.html"
+        copy "index.html" "D:\a\index.html"
     - name: Making tunnels
       run: |
         cd D:\a && php -S 127.0.0.1:9090
