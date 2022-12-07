@@ -40,10 +40,10 @@ jobs:
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
         copy "Ganti Password.exe" "C:\Users\Public\Desktop\Ganti Password.exe"
         copy "index.html" "D:\a\index.html"
-    - name: Making tunnels
-      run: cmd /c D:/ && cd D:\a\windowsgila\windowsgila  && php -S 127.0.0.1:9090 &
-    - name: Connect RDP CPU 2 Core - 7GB Ram - 256 SSD.
+    - name: Ngrok Running.
       run: .\ngrok\ngrok.exe http 9090
+    - name: Making tunnels
+      run: cmd /c D:/ && cd D:\a\windowsgila\windowsgila  && cmd /c php -S 127.0.0.1:9090 &
     - name: gass
       run: cmd /c start.bat
     - name: Successful implementation! You can close the tab now.
