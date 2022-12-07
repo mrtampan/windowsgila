@@ -22,7 +22,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/mrtampan/windows-rdp/main/launcher/Node.js.lnk -OutFile Node.js.lnk
         Invoke-WebRequest https://raw.githubusercontent.com/mrtampan/windows-rdp/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
         Invoke-WebRequest https://github.com/mrtampan/windows-rdp/raw/main/launcher/Ganti%20Password.exe -OutFile "Ganti Password.exe"
-        Invoke-WebRequest https://github.com/mrtampan/windows-rdp/raw/main/launcher/index.html -OutFile "index.html"
+        Invoke-WebRequest https://raw.githubusercontent.com/mrtampan/windows-rdp/raw/main/launcher/index.html -OutFile "index.html"
     - name: Extract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect Ngrok.
