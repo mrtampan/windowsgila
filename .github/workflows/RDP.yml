@@ -1,6 +1,11 @@
 name: Windows-RDP
 
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+    inputs:
+      tokenku:
+        description: 'Input ngrok token'
+        required: true
 
 jobs:
   build:
