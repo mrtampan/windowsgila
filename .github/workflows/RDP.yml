@@ -26,6 +26,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/mrtampan/windows-rdp/main/launcher/Node.js.lnk -OutFile Node.js.lnk
         Invoke-WebRequest https://raw.githubusercontent.com/mrtampan/windows-rdp/main/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
         Invoke-WebRequest https://github.com/mrtampan/windows-rdp/raw/main/launcher/Ganti%20Password.exe -OutFile "Ganti Password.exe"
+        Invoke-WebRequest https://github.com/mrtampan/windows-rdp/raw/main/launcher/idman641build6.exe -OutFile "idman641build6.exe"
     - name: Extract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect Ngrok.
@@ -42,6 +43,7 @@ jobs:
         copy Node.js.lnk C:\Users\Public\Desktop\Node.js.lnk
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
         copy "Ganti Password.exe" "C:\Users\Public\Desktop\Ganti Password.exe"
+        copy "idman641build6.exe" "C:\Users\Public\Desktop\idman641build6.exe"
     - name: Making tunnels
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
     - name: Connect RDP CPU 2 Core - 7GB Ram - 256 SSD.
