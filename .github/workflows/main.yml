@@ -10,7 +10,7 @@ on:
 jobs:
   build:
 
-    runs-on: windows-2016
+    runs-on: windows-2019
     timeout-minutes: 99999999999999999
 
     steps:
