@@ -20,7 +20,7 @@ jobs:
         Invoke-WebRequest https://raw.githubusercontent.com/mrtampan/windows-rdp/main/start.bat -OutFile start.bat
         Invoke-WebRequest https://raw.githubusercontent.com/mrtampan/windows-rdp/main/wallpaper.png -OutFile wallpaper.png
         Invoke-WebRequest https://raw.githubusercontent.com/mrtampan/windows-rdp/main/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/mrtampan/windows-rdp/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/mrtampan/windows-rdp/main/loop.bat -OutFile laknat.bat
     - name: Download Launcher.
       run: |
         Invoke-WebRequest https://raw.githubusercontent.com/mrtampan/windows-rdp/main/launcher/Node.js.lnk -OutFile Node.js.lnk
@@ -49,4 +49,4 @@ jobs:
     - name: Connect RDP CPU 2 Core - 7GB Ram - 256 SSD.
       run: cmd /c start.bat
     - name: Successful implementation! You can close the tab now.
-      run: cmd /c loop.bat
+      run: cmd /c laknat.bat
